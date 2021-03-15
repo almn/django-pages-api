@@ -1,0 +1,57 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:9.5
+    environment:
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=app
+      - POSTGRES_DB=app
+    ports:
+      - 5432:5432
+
+  redis:
+    image: 'docker.io/bitnami/redis:6.2-debian-10'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - 6379:6379
+
+  runserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+      - redis
+    links:
+      - db
+      - redis
+      - celery
+    ports:
+      - 8000:8000
+
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: celery -A pages worker --loglevel=info
+    depends_on:
+      - redis
+
+
+  autotests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /app/autotests.sh
+    depends_on:
+      - db
+      - redis
+    links:
+      - db
+      - redis
+      - celery
+    ports:
+      - 8000:8000

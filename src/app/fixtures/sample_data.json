@@ -1,0 +1,427 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$SBwsrXprhxI1$LwSFqolu1UgTlIa6d97xF2MWEV/GOwgfxhLQJTHxmGc=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@mail.me",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-03-14T12:48:50.438Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 1,
+    "fields": {
+      "polymorphic_ctype": 9,
+      "title": "audio 1",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 2,
+    "fields": {
+      "polymorphic_ctype": 9,
+      "title": "audio 2",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 3,
+    "fields": {
+      "polymorphic_ctype": 9,
+      "title": "audio 3",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 4,
+    "fields": {
+      "polymorphic_ctype": 9,
+      "title": "audio 4",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 5,
+    "fields": {
+      "polymorphic_ctype": 9,
+      "title": "audio 5",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 6,
+    "fields": {
+      "polymorphic_ctype": 10,
+      "title": "text 1",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 7,
+    "fields": {
+      "polymorphic_ctype": 10,
+      "title": "text 2",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 8,
+    "fields": {
+      "polymorphic_ctype": 11,
+      "title": "video 1",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 9,
+    "fields": {
+      "polymorphic_ctype": 11,
+      "title": "video 2",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.contentitem",
+    "pk": 10,
+    "fields": {
+      "polymorphic_ctype": 11,
+      "title": "video 3",
+      "counter": 0
+    }
+  },
+  {
+    "model": "app.video",
+    "pk": 8,
+    "fields": {
+      "video_file": "video.avi",
+      "srt_file": "video.srt"
+    }
+  },
+  {
+    "model": "app.video",
+    "pk": 9,
+    "fields": {
+      "video_file": "video2.avi",
+      "srt_file": "video2.srt"
+    }
+  },
+  {
+    "model": "app.video",
+    "pk": 10,
+    "fields": {
+      "video_file": "video3.avi",
+      "srt_file": "video3.srt"
+    }
+  },
+  {
+    "model": "app.audio",
+    "pk": 1,
+    "fields": {
+      "bitrate": 100
+    }
+  },
+  {
+    "model": "app.audio",
+    "pk": 2,
+    "fields": {
+      "bitrate": 200
+    }
+  },
+  {
+    "model": "app.audio",
+    "pk": 3,
+    "fields": {
+      "bitrate": 300
+    }
+  },
+  {
+    "model": "app.audio",
+    "pk": 4,
+    "fields": {
+      "bitrate": 400
+    }
+  },
+  {
+    "model": "app.audio",
+    "pk": 5,
+    "fields": {
+      "bitrate": 500
+    }
+  },
+  {
+    "model": "app.text",
+    "pk": 6,
+    "fields": {
+      "content": "text 1 sample"
+    }
+  },
+  {
+    "model": "app.text",
+    "pk": 7,
+    "fields": {
+      "content": "text 2 sample"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 1,
+    "fields": {
+      "title": "Page 1"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 2,
+    "fields": {
+      "title": "Page 2"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 3,
+    "fields": {
+      "title": "Page 3"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 4,
+    "fields": {
+      "title": "Page 4"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 5,
+    "fields": {
+      "title": "Page 5"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 6,
+    "fields": {
+      "title": "Page 6"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 7,
+    "fields": {
+      "title": "Page 7"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 8,
+    "fields": {
+      "title": "Page 7"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 9,
+    "fields": {
+      "title": "Page 8"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 10,
+    "fields": {
+      "title": "Page 9"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 11,
+    "fields": {
+      "title": "Page 10"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 12,
+    "fields": {
+      "title": "Page 11"
+    }
+  },
+  {
+    "model": "app.page",
+    "pk": 13,
+    "fields": {
+      "title": "Page 12"
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 1,
+    "fields": {
+      "page": 1,
+      "item": 2,
+      "sort_by": 1
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 2,
+    "fields": {
+      "page": 1,
+      "item": 7,
+      "sort_by": 2
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 3,
+    "fields": {
+      "page": 1,
+      "item": 5,
+      "sort_by": 3
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 4,
+    "fields": {
+      "page": 2,
+      "item": 3,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 5,
+    "fields": {
+      "page": 4,
+      "item": 4,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 6,
+    "fields": {
+      "page": 4,
+      "item": 5,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 7,
+    "fields": {
+      "page": 5,
+      "item": 7,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 8,
+    "fields": {
+      "page": 6,
+      "item": 8,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 9,
+    "fields": {
+      "page": 7,
+      "item": 2,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 10,
+    "fields": {
+      "page": 7,
+      "item": 9,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 11,
+    "fields": {
+      "page": 8,
+      "item": 5,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 12,
+    "fields": {
+      "page": 9,
+      "item": 4,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 13,
+    "fields": {
+      "page": 10,
+      "item": 7,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 14,
+    "fields": {
+      "page": 11,
+      "item": 10,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 15,
+    "fields": {
+      "page": 12,
+      "item": 8,
+      "sort_by": 0
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 16,
+    "fields": {
+      "page": 13,
+      "item": 8,
+      "sort_by": 6
+    }
+  },
+  {
+    "model": "app.contentitemonpage",
+    "pk": 17,
+    "fields": {
+      "page": 13,
+      "item": 5,
+      "sort_by": 3
+    }
+  }
+]

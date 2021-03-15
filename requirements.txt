@@ -1,0 +1,7 @@
+Celery
+Django
+django-polymorphic
+djangorestframework
+psycopg2-binary
+redis
+whitenoise==5.2.0
